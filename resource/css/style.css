@@ -12,6 +12,9 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 *+address, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
      margin-top: 0 !important; 
 }
+ol, ul {
+    padding-left: 0px !important;
+}
 
 /*===== common css =======*/
 * {
@@ -46,7 +49,7 @@ font-family: 'Roboto', sans-serif;
 */
 /*======== reuseable css =========*/
 .row {
-	width: 114rem;
+	max-width: 114rem;
 	margin: auto;
 }
 .btn {
@@ -162,7 +165,7 @@ section {
 }
 .qoute-info h3 {
 	font-size: 2.5rem;
-	color:#fff;
+	color:#fff !important;
 }
 .qoute-info h3 span {
 	color:#000;
@@ -185,13 +188,16 @@ section {
 /*            service section                           */
 /*=====================================================*/
 .service {
-	background:linear-gradient(rgba(167, 254, 220, .5), rgba(167, 254, 220, .5)),url('../img/bg8.jpg');
+	background: linear-gradient(rgba(254, 192, 167, .6), rgba(254, 192, 167, .6)),url('../img/bg8.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment:;
 }
-.section-title {}
+.service .section-title {}
+.service .section-title h2 {
+	color:#fff !important;
+}
 .grid-service-container {
 	display: -ms-grid;
 	display: grid;
@@ -328,9 +334,11 @@ section {
 }
 .grid-work-iteam .work-overlay .work-overlay-text h4{
 	font-size: 1.6rem;
-	padding-left: 1.5rem !important;
+	padding-left: .1rem !important;
 	font-family: 'Roboto', sans-serif;
 	margin-top:0 !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
 }
 .grid-work-iteam .work-overlay::after {
 	content: '';
@@ -354,7 +362,7 @@ section {
 	left: 0;
 	bottom:-6rem;
 	width: 100%;
-	opacity: .0;
+	opacity: 1;
 	transition: .5s;
 	z-index: 999;
 }
@@ -378,7 +386,7 @@ section {
 }
 .customer-feedback-img{
 	width: 80%;
-	margin-right: 2rem;
+	margin-left: 2rem !important;
 }
 .customer-feedback-img img {
 	width: 100%;
@@ -491,7 +499,7 @@ section {
 	padding-top:8rem;
 	padding-bottom:8rem;
 }
-h4 {
+.contact-section h4 {
 	text-transform: capitalize;
 	padding-bottom: 2rem !important;
 }
