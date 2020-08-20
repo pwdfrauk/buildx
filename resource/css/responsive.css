@@ -94,6 +94,17 @@
 	max-width: 45rem;
 	margin: auto;
 	}
+	.service,
+	.product-section,
+	.work-section,
+	.feedback-section,
+	.project-count-section,
+	.embedded-client,
+	.featured-news-section,
+	.contact-section,
+	.footer {
+		margin:0 1.5rem !important;
+	}
 	html  {
 	font-size: 50.5%;
 	}
@@ -128,7 +139,7 @@
     grid-gap: 1rem;
 	}
  	.grid-product-item-video img {
-    width: 88%;
+    width: 100%;
     height: auto;
      margin-top:0rem !important;
 	}
@@ -176,4 +187,14 @@
     padding: 2.2rem 1rem;
  
 	}
+	.product{
+	display: grid;
+	grid-template-columns: 10rem auto;
+	grid-gap:2rem;
+	margin-bottom:2rem;
+	}
+	.grid-product-item-video i {
+    right: 4rem;
+    bottom: 2rem;
+}
 }

@@ -1,4 +1,4 @@
-
+// To apply lightbox to a group of links
 $(document).ready(function(){
 	/*mixitUp*/
 	var mixer = mixitup('.container');

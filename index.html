@@ -24,7 +24,7 @@
 <body>
 	<!-- start header section  -->
 	<header class="header-section">
-		<nav>
+		<nav uk-sticky="top: 200; bottom: #animation">
 			<div class="row">
 				<div class="logo">
 					<img src="images/pwdfaruklogo.png" alt="logo" width="80" height="40">
@@ -150,9 +150,11 @@
 				<button type="button" data-filter=".webdesing">web design</button>
 				<button type="button" data-filter=".developer">developer</button>
 			</div>
-			<div class="grid-work-container container">
+			<div  class="grid-work-container container"  uk-grid uk-lightbox="animation: slide">
 				<div class="grid-work-iteam mix webhosting developer">
-					<img src="images/s2.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/s2.jpg" data-caption="Caption 1">
+						<img src="images/s2.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>Web security </h4>
@@ -164,7 +166,9 @@
 					</div>
 				</div>
 				<div class="grid-work-iteam mix datacenter webhosting developer">
-					<img src="images/s1.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/s1.jpg" data-caption="Caption 1">
+						<img src="images/s1.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>web hosting provider</h4>
@@ -176,7 +180,9 @@
 					</div>
 				</div>
 				<div class="grid-work-iteam mix">
-					<img src="images/s3.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/s3.jpg" data-caption="Caption 1">
+						<img src="images/s3.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>Innoovetion</h4>
@@ -188,7 +194,9 @@
 					</div>
 				</div>
 				<div class="grid-work-iteam mix webdesing developer">
-					<img src="images/s5.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/s5.jpg" data-caption="Caption 1">
+						<img src="images/s5.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>web DESIGN</h4>
@@ -200,7 +208,9 @@
 					</div>
 				</div>
 				<div class="grid-work-iteam mix">
-					<img src="images/video.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/video.jpg" data-caption="Caption 1">
+						<img src="images/video.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>webcam security</h4>
@@ -212,7 +222,9 @@
 					</div>
 				</div>
 				<div class="grid-work-iteam mix datacenter webhosting developer">
-					<img src="images/s6.jpg" alt="icon" width="365" height="245">
+					<a class="uk-inline" href="images/s6.jpg" data-caption="Caption 1">
+						<img src="images/s6.jpg" alt="icon" width="365" height="245">
+					</a>
 					<div class="work-overlay">
 						<div class="work-overlay-text">
 							<h4>tracking system provider</h4>
@@ -418,6 +430,9 @@
 			<li><a href="#">pages</a></li>
 			<li><a href="#">contact</a></li>
 		</ul>
+		<div class="scrolling-top">
+			<a href="#" uk-totop uk-scroll><i class="fas fa-long-arrow-alt-up"></i></a>
+		</div>
 	</div>
 </footer>
 <!-- end footer section -->
@@ -438,6 +453,7 @@
 <!-- counter Up -->
 <script src="vendor/js/jquery.counterup.min.js"></script>
 <!-- Uikit -->
+<script src="vendor/js/uikit.min.js"></script>
 <script src="vendor/js/uikit-icons.min.js"></script>
 <!-- main js -->
 <script src="resource/js/main.js"></script>
